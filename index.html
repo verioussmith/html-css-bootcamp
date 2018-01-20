@@ -2,10 +2,18 @@
 <html>
 	<head>
 		<title>HTML/CSS Bootcamp</title>
+		<!-- The link tag connects the external stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<meta charset="UTF-8">
+		<!-- These are embeded styles -->
+		<style type="text/css">
+			p { font-size:20px; } /* This is an element selector*/
+			#navigation { color: red; }
+			.ordered { color: blue; }
+		</style>
 	</head>
-	<body>
+	<!-- This is an inline style on the body tag -->
+	<body style="color: #444;">
 		<h1>Hello World</h1>
 		<h2>I am an h2</h2>
 		<h3>I am an h3</h3>
@@ -13,7 +21,7 @@
 		<h5>I am an h5</h5>
 		<h6>I am an h6</h6>
 		<div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula id diam ac rhoncus. In vehicula mauris magna, vitae sollicitudin <span>neque iaculis</span> vel. <a href="http://google.com" target="_blank">Aliquam interdum</a> hendrerit nisl, a dictum felis iaculis sit amet. Etiam lacinia elit at mattis pretium. Aliquam nec sagittis dolor. Nam non posuere purus. <a href="#bottom">Ut sit amet</a> condimentum magna.</p> 
+			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula id diam ac rhoncus. In vehicula mauris magna, vitae sollicitudin <span>neque iaculis</span> vel. <a href="http://google.com" target="_blank">Aliquam interdum</a> hendrerit nisl, a dictum felis iaculis sit amet. Etiam lacinia elit at mattis pretium. Aliquam nec sagittis dolor. Nam non posuere purus. <a href="#bottom">Ut sit amet</a> condimentum magna.</p> 
 			<img src="image-one.jpg" width="100%" usemap="#wilderness">
 			<map name="#wilderness">
 				<area shape="rect" coords="10,150,500,100" href="https://google.com">
@@ -22,12 +30,20 @@
 			</map>
 			<p>Integer mattis eu dui viverra ullamcorper. Donec consequat ante a rhoncus <span>finibus</span>. Nunc hendrerit, urna nec volutpat sodales, enim ante viverra nulla, eu fringilla nunc ligula ac risus. Curabitur mattis feugiat enim, eu vehicula nisi accumsan non. Nam aliquam aliquam nisl sed varius.</p>
 		</div>
+		<nav id="navigation">
+			<ul>
+				<li>Nav One</li>
+				<li>Nav Two</li>
+				<li>Nav Three</li>
+			</ul>
+		</nav>
+		<!-- This is an HTML Comment -->
 		<h2>Hey I'm Paragraph Two</h2>
 		<div>
 			<p>Aliquam nec sagittis dolor. Nam non posuere purus. Ut sit amet condimentum magna. Integer mattis eu dui viverra ullamcorper. Donec consequat <span>ante a rhoncus</span> finibus. Nunc hendrerit, urna nec volutpat sodales, enim ante viverra nulla, eu fringilla nunc ligula ac risus. Curabitur mattis feugiat enim, eu vehicula nisi accumsan non. Nam aliquam aliquam nisl sed varius.</p>
 		</div>
 		<div>
-			<ol>
+			<ol class="ordered">
 				<li><mark>Item</mark> one</li>
 				<li><small>Item</small> two</li>
 					<ol>
